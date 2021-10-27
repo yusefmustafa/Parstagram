@@ -17,7 +17,7 @@
     </ImageView>
 
     <EditText
-        android:id="@+id/etSignupUsername"
+        android:id="@+id/etLoginUsername"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -29,7 +29,7 @@
         android:padding="10dp" />
 
     <EditText
-        android:id="@+id/etSignupPassword"
+        android:id="@+id/etLoginPassword"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
@@ -50,7 +50,7 @@
         android:text="LOG IN" />
 
     <Button
-        android:id="@+id/btnSignupSignup"
+        android:id="@+id/btnSignup"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_weight="1"

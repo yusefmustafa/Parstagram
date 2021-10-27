@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
@@ -31,9 +30,9 @@ public class SignupActivity extends AppCompatActivity {
 //        if (ParseUser.getCurrentUser() != null) {
 //            goMainActivity();
 //        }
-        etSignupUsername = findViewById(R.id.etSignupUsername);
-        etSignupPassword = findViewById(R.id.etSignupPassword);
-        btnSignupSignup = findViewById(R.id.btnSignupSignup);
+        etSignupUsername = findViewById(R.id.etLoginUsername);
+        etSignupPassword = findViewById(R.id.etLoginPassword);
+        btnSignupSignup = findViewById(R.id.btnSignup);
         btnSignupSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

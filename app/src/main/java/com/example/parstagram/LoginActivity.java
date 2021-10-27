@@ -29,10 +29,10 @@ public class LoginActivity extends AppCompatActivity {
         if (ParseUser.getCurrentUser() != null) {
             goMainActivity();
         }
-        etUsername = findViewById(R.id.etSignupUsername);
-        etPassword = findViewById(R.id.etSignupPassword);
+        etUsername = findViewById(R.id.etLoginUsername);
+        etPassword = findViewById(R.id.etLoginPassword);
         btnLogin = findViewById(R.id.btnLogin);
-        btnSignup = findViewById(R.id.btnSignupSignup);
+        btnSignup = findViewById(R.id.btnSignup);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +58,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginUser(String username, String password) {
-        Log.i(TAG, "Attempting to login user " + username);
+//        goMainActivity();
+//        Log.i(TAG, "Attempting to login user " + username);
         ParseUser.logInInBackground(username, password, new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException e) {
@@ -72,6 +73,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void goMainActivity() {
+        Log.i(TAG, "here! ");
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
         finish();
